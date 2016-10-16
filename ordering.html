@@ -1,0 +1,448 @@
+<html>
+  <head>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="ordering.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand navbar-image" href="mainmenu.html">
+      <img alt="Rebeccas" src="images/logo-icon.gif">
+      </a>
+      <div class="navbar-brand">Order</div>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+		  <li><a href="mainmenu.html">Home</a></li>
+		  <li><a href="hours.html">Hours</a></li>
+		  <li><a href="ordering.html">Order</a></li>
+		  <li><a href="cart.html">My Cart</a></li>
+		  <li><a href="login.html">Log Out</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="order">
+    <div class="sandwiches">
+
+
+  <!-- Sandwiches -->
+   <div class="row text-left">
+
+    <div class="col-md-3 col-sm-6 hero-feature">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>Tuscan Turkey</h3>
+              <p class="ingred1">Ingredients</p>
+              <p>
+                <div class="row">
+                <a id="tuscan" href="#" class="btn btn-primary">Add to Cart</a>
+                  <!-- Large modal -->
+                <button type="button" class="btn btn-primary add-drink-side" data-toggle="modal" data-target=".tuscan">Customize</button>
+
+                <div class="modal fade bs-example-modal-lg tuscan" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center">Bread</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check1" type="radio" name="optradio" value="Multi-Grain">Multi-Grain</li>
+                              <li style="padding:10px;"><input class="check1"  type="radio" name="optradio" value="Focaccia" checked>Focaccia</li>
+                              <li style="padding:10px;"><input class="check1"  type="radio" name="optradio" value="Tortilla">Tortilla</li>
+                              <li style="padding:10px;"><input class="check1"  type="radio" name="optradio" value="French">French</li>
+                              <li style="padding:10px;"><input class="check1"  type="radio" name="optradio" value="Italian">Italian</li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center">Meat</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check1"  type="checkbox" value="Bacon">Bacon</li>
+                              <li style="padding:10px;"><input class="check1"  type="checkbox" value="Chicken">Chicken</li>
+                              <li style="padding:10px;"><input class="check1"  type="checkbox" value="Ham">Ham</li>
+                              <li style="padding:10px;"><input class="check1"  type="checkbox" value="Turkey" checked>Turkey</li>
+                              <li style="padding:10px;"><input class="check1"  type="checkbox" value="Pulled Pork">Pulled Pork</li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center;">Cheese</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check1"  type="checkbox" value="Cheddar">Cheddar</li>
+                              <li style="padding:10px;"><input class="check1"  type="checkbox" value="Swiss">Swiss</li>
+                              <li style="padding:10px;"><input class="check1"  type="checkbox" value="Mozzarella" checked>Mozzarella</li>
+                              <li style="padding:10px;"><input class="check1"  type="checkbox" value="Provolone">Provolone</li>
+                            </ul>
+                          </div>
+                            <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center;">Vegetables</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check1"  type="checkbox" value="Onions">Onions</li>
+                              <li style="padding:10px;"><input class="check1"  type="checkbox" value="Lettuce">Lettuce</li>
+                              <li style="padding:10px;"><input class="check1"  type="checkbox" value="Tomato">Tomato</li>
+                              <li style="padding:10px;"><input class="check1"  type="checkbox" value="Peppers" checked>Peppers</li>
+                              <li style="padding:10px;"><input class="check1"  type="checkbox" value="Pickles">Pickles</li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center;">Condiments</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check1"  type="checkbox" value="Mayo">Mayo</li>
+                              <li style="padding:10px;"><input class="check1"  type="checkbox" value="Pesto" checked>Pesto</li>
+                              <li style="padding:10px;"><input class="check1"  type="checkbox" value="Guacamole">Guacamole</li>
+                              <li style="padding:10px;"><input class="check1"  type="checkbox" value="Mustard">Mustard</li>
+                              <li style="padding:10px;"><input class="check1"  type="checkbox" value="Hot Sauce">Hot Sauce</li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                                <button style="margin:10%; width:80%;" class="btn btn-primary done-turkey" data-dismiss="modal">Done</button>
+
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                </div><!--end row-->
+              </p>
+        </div>
+      </div>
+    </div>
+
+	<div class="col-md-3 col-sm-6 hero-feature">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>BBQ Pork</h3>
+              <p class="ingred2">Ingredients</p>
+                <div class="row">
+                <a id="bbq" href="#" class="btn btn-primary">Add to Cart</a>
+                  <!-- Large modal -->
+                <button type="button" class="btn btn-primary add-drink-side" data-toggle="modal" data-target=".bbq">Customize</button>
+
+                <div class="modal fade bs-example-modal-lg bbq" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center">Bread</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check2" type="radio" name="optradio" value="Multi-Grain">Multi-Grain</li>
+                              <li style="padding:10px;"><input class="check2" type="radio" name="optradio" value="Focaccia" checked>Focaccia</li>
+                              <li style="padding:10px;"><input class="check2" type="radio" name="optradio" value="Tortilla">Tortilla</li>
+                              <li style="padding:10px;"><input class="check2" type="radio" name="optradio" value="French">French</li>
+                              <li style="padding:10px;"><input class="check2" type="radio" name="optradio" value="Italian">Italian</li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center">Meat</h4>
+                            <ul style="list-style-type:none;"
+                              <li style="padding:10px;"><input class="check2" type="checkbox" value="Bacon">Bacon</li>
+                              <li style="padding:10px;"><input class="check2" type="checkbox" value="Chicken">Chicken</li>
+                              <li style="padding:10px;"><input class="check2" type="checkbox" value="Ham" >Ham</li>
+                              <li style="padding:10px;"><input class="check2" type="checkbox" value="Turkey">Turkey</li>
+                              <li style="padding:10px;"><input class="check2" type="checkbox" value="Pulled Pork" checked>Pulled Pork</li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center;">Cheese</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check2" type="checkbox" value="Cheddar" checked>Cheddar</li>
+                              <li style="padding:10px;"><input class="check2" type="checkbox" value="Swiss">Swiss</li>
+                              <li style="padding:10px;"><input class="check2" type="checkbox" value="Mozzarella">Mozzarella</li>
+                              <li style="padding:10px;"><input class="check2" type="checkbox" value="Provolone">Provolone</li>
+                            </ul>
+                          </div>
+                            <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center;">Vegetables</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check2" type="checkbox" value="Onions" checked>Onions</li>
+                              <li style="padding:10px;"><input class="check2" type="checkbox" value="Lettuce">Lettuce</li>
+                              <li style="padding:10px;"><input class="check2" type="checkbox" value="Tomato">Tomato</li>
+                              <li style="padding:10px;"><input class="check2" type="checkbox" value="Peppers">Peppers</li>
+                              <li style="padding:10px;"><input class="check2" type="checkbox" value="Pickles">Pickles</li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center;">Condiments</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check2" type="checkbox" value="Mayo">Mayo</li>
+                              <li style="padding:10px;"><input class="check2" type="checkbox" value="Pesto">Pesto</li>
+                              <li style="padding:10px;"><input class="check2" type="checkbox" value="Guacamole">Guacamole</li>
+                              <li style="padding:10px;"><input class="check2" type="checkbox" value="Mustard">Mustard</li>
+                              <li style="padding:10px;"><input class="check2" type="checkbox" value="Hot Sauce">Hot Sauce</li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                                <button style="margin:10%; width:80%;" class="btn btn-primary done-bbq" data-dismiss="modal">Done</button>
+
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                </div><!--end row-->
+        </div>
+    </div>
+
+  <div class="col-md-3 col-sm-6 hero-feature">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>Caprese</h3>
+              <p class="ingred3">Ingredients</p>
+              <p>
+                <div class="row">
+                <a id="caprese" href="#" class="btn btn-primary">Add to Cart</a>
+                  <!-- Large modal -->
+                <button type="button" class="btn btn-primary add-drink-side" data-toggle="modal" data-target=".caprese">Customize</button>
+
+                <div class="modal fade bs-example-modal-lg caprese" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center">Bread</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check3" type="radio" name="optradio" value="Multi-Grain">Multi-Grain</li>
+                              <li style="padding:10px;"><input class="check3" type="radio" name="optradio" value="Focaccia" checked>Focaccia</li>
+                              <li style="padding:10px;"><input class="check3" type="radio" name="optradio" value="Tortilla">Tortilla</li>
+                              <li style="padding:10px;"><input class="check3" type="radio" name="optradio" value="French">French</li>
+                              <li style="padding:10px;"><input class="check3" type="radio" name="optradio" value="Italian">Italian</li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center">Meat</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check3" type="checkbox" value="Bacon">Bacon</li>
+                              <li style="padding:10px;"><input class="check3" type="checkbox" value="Chicken">Chicken</li>
+                              <li style="padding:10px;"><input class="check3" type="checkbox" value="Ham">Ham</li>
+                              <li style="padding:10px;"><input class="check3" type="checkbox" value="Turkey">Turkey</li>
+                              <li style="padding:10px;"><input class="check3" type="checkbox" value="Pulled Pork">Pulled Pork</li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center;">Cheese</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check3" type="checkbox" value="Cheddar">Cheddar</li>
+                              <li style="padding:10px;"><input class="check3" type="checkbox" value="Swiss">Swiss</li>
+                              <li style="padding:10px;"><input class="check3" type="checkbox" value="Mozzarella" checked>Mozzarella</li>
+                              <li style="padding:10px;"><input class="check3" type="checkbox" value="Provolone">Provolone</li>
+                            </ul>
+                          </div>
+                            <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center;">Vegetables</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check3" type="checkbox" value="Onion" checked>Onions</li>
+                              <li style="padding:10px;"><input class="check3" type="checkbox" value="Lettuce">Lettuce</li>
+                              <li style="padding:10px;"><input class="check3" type="checkbox" value="Tomato" checked>Tomato</li>
+                              <li style="padding:10px;"><input class="check3" type="checkbox" value="Peppers">Peppers</li>
+                              <li style="padding:10px;"><input class="check3" type="checkbox" value="Pickles">Pickles</li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center;">Condiments</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check3" type="checkbox" value="Mayo">Mayo</li>
+                              <li style="padding:10px;"><input class="check3" type="checkbox" value="Pesto" checked>Pesto</li>
+                              <li style="padding:10px;"><input class="check3" type="checkbox" value="Guacamole">Guacamole</li>
+                              <li style="padding:10px;"><input class="check3" type="checkbox" value="Mustard">Mustard</li>
+                              <li style="padding:10px;"><input class="check3" type="checkbox" value="Hot Sauce">Hot Sauce</li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                                <button style="margin:10%; width:80%;" class="btn btn-primary done-caprese" data-dismiss="modal">Done</button>
+
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                </div><!--end row-->
+              </p>
+        </div>
+      </div>
+    </div>
+
+  <div class="col-md-3 col-sm-6 hero-feature">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>Spicy Ham</h3>
+              <p class="ingred4">Ingredients</p>
+              <p>
+                <div class="row">
+                <a id="spicyham" href="#" class="btn btn-primary">Add to Cart</a>
+                  <!-- Large modal -->
+                <button type="button" class="btn btn-primary add-drink-side" data-toggle="modal" data-target=".spicyham">Customize</button>
+
+                <div class="modal fade bs-example-modal-lg spicyham" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center">Bread</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check4" type="radio" name="optradio" value="Multi-Grain">Multi-Grain</li>
+                              <li style="padding:10px;"><input class="check4" type="radio" name="optradio" value="Focaccia">Focaccia</li>
+                              <li style="padding:10px;"><input class="check4" type="radio" name="optradio" value="Tortilla">Tortilla</li>
+                              <li style="padding:10px;"><input class="check4" type="radio" name="optradio" value="French">French</li>
+                              <li style="padding:10px;"><input class="check4" type="radio" name="optradio" value="Italian" checked>Italian</li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center">Meat</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check4" type="checkbox" value="Bacon">Bacon</li>
+                              <li style="padding:10px;"><input class="check4" type="checkbox" value="Chicken">Chicken</li>
+                              <li style="padding:10px;"><input class="check4" type="checkbox" value="Ham" checked>Ham</li>
+                              <li style="padding:10px;"><input class="check4" type="checkbox" value="Turkey">Turkey</li>
+                              <li style="padding:10px;"><input class="check4" type="checkbox" value="Pulled Pork">Pulled Pork</li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center;">Cheese</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check4" type="checkbox" value="Cheddar">Cheddar</li>
+                              <li style="padding:10px;"><input class="check4" type="checkbox" value="Swiss" checked>Swiss</li>
+                              <li style="padding:10px;"><input class="check4" type="checkbox" value="Mozzarella">Mozzarella</li>
+                              <li style="padding:10px;"><input class="check4" type="checkbox" value="Provolone">Provolone</li>
+                            </ul>
+                          </div>
+                            <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center;">Vegetables</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check4" type="checkbox" value="Onions" checked>Onions</li>
+                              <li style="padding:10px;"><input class="check4" type="checkbox" value="Lettuce">Lettuce</li>
+                              <li style="padding:10px;"><input class="check4" type="checkbox" value="Tomato">Tomato</li>
+                              <li style="padding:10px;"><input class="check4" type="checkbox" value="Peppers">Peppers</li>
+                              <li style="padding:10px;"><input class="check4" type="checkbox" value="Pickles" checked>Pickles</li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center;">Condiments</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check4" type="checkbox" value="Mayo">Mayo</li>
+                              <li style="padding:10px;"><input class="check4" type="checkbox" value="Pesto">Pesto</li>
+                              <li style="padding:10px;"><input class="check4" type="checkbox" value="Guacamole">Guacamole</li>
+                              <li style="padding:10px;"><input class="check4" type="checkbox" value="Mustard" checked>Mustard</li>
+                              <li style="padding:10px;"><input class="check4" type="checkbox" value="Hot Sauce">Hot Sauce</li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                                <button style="margin:10%; width:80%;" class="btn btn-primary done-spicy" data-dismiss="modal">Done</button>
+
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                </div><!--end row-->
+              </p>
+        </div>
+      </div>
+    </div>
+
+<div class="col-md-3 col-sm-6 hero-feature">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>Create Your Own</h3>
+              <p class="ingred5">Ingredients</p>
+              <p>
+                <div class="row">
+                <a id="create" href="#" class="btn btn-primary">Add to Cart</a>
+                  <!-- Large modal -->
+                <button type="button" class="btn btn-primary add-drink-side" data-toggle="modal" data-target=".create">Customize</button>
+
+                <div class="modal fade bs-example-modal-lg create" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center">Bread</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check5" type="radio" name="optradio" value="Multi-Grain">Multi-Grain</li>
+                              <li style="padding:10px;"><input class="check5" type="radio" name="optradio" value="Focaccia">Focaccia</li>
+                              <li style="padding:10px;"><input class="check5" type="radio" name="optradio" value="Tortilla">Tortilla</li>
+                              <li style="padding:10px;"><input class="check5" type="radio" name="optradio" value="French">French</li>
+                              <li style="padding:10px;"><input class="check5" type="radio" name="optradio" value="Italian">Italian</li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center">Meat</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check5" type="checkbox" value="Bacon">Bacon</li>
+                              <li style="padding:10px;"><input class="check5" type="checkbox" value="Chicken">Chicken</li>
+                              <li style="padding:10px;"><input class="check5" type="checkbox" value="Ham">Ham</li>
+                              <li style="padding:10px;"><input class="check5" type="checkbox" value="Turkey">Turkey</li>
+                              <li style="padding:10px;"><input class="check5" type="checkbox" value="Pulled Pork">Pulled Pork</li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center;">Cheese</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check5" type="checkbox" value="Cheddar">Cheddar</li>
+                              <li style="padding:10px;"><input class="check5" type="checkbox" value="Swiss">Swiss</li>
+                              <li style="padding:10px;"><input class="check5" type="checkbox" value="Mozzarella">Mozzarella</li>
+                              <li style="padding:10px;"><input class="check5" type="checkbox" value="Provolone">Provolone</li>
+                            </ul>
+                          </div>
+                            <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center;">Vegetables</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check5" type="checkbox" value="Onions">Onions</li>
+                              <li style="padding:10px;"><input class="check5" type="checkbox" value="Lettuce">Lettuce</li>
+                              <li style="padding:10px;"><input class="check5" type="checkbox" value="Tomato">Tomato</li>
+                              <li style="padding:10px;"><input class="check5" type="checkbox" value="Peppers">Peppers</li>
+                              <li style="padding:10px;"><input class="check5" type="checkbox" value="Pickles">Pickles</li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6 col-sm-12">
+                            <h4 style="text-align:center;">Condiments</h4>
+                            <ul style="list-style-type:none;">
+                              <li style="padding:10px;"><input class="check5" type="checkbox" value="Mayo">Mayo</li>
+                              <li style="padding:10px;"><input class="check5" type="checkbox" value="Pesto">Pesto</li>
+                              <li style="padding:10px;"><input class="check5" type="checkbox" value="Guacamole">Guacamole</li>
+                              <li style="padding:10px;"><input class="check5" type="checkbox" value="Mustard">Mustard</li>
+                              <li style="padding:10px;"><input class="check5" type="checkbox" value="Hot Sauce">Hot Sauce</li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                                <button style="margin:10%; width:80%;" class="btn btn-primary done-create" data-dismiss="modal">Done</button>
+
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                </div><!--end row-->
+              </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+        <!-- /.row -->
+
+    </div>
+  </div>
+  <a class="btn btn-primary cart-btn" style="margin:20px;" href="cart.html">Cart (0)</a><a href="checkout.html" class="btn btn-primary checkout-btn">Checkout</a>
+</html>

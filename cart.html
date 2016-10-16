@@ -1,0 +1,114 @@
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Rebecca's Cafe</title>
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		
+		<!-- JavaScript -->
+		<script src="cart.js"></script>
+
+		<!-- Bootstrap -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand navbar-image" href="mainmenu.html">
+				<img alt="Rebeccas" src="images/logo-icon.gif">
+			  </a>
+			  <div class="navbar-brand">Checkout</div>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+				<li><a href="mainmenu.html">Home</a></li>
+				<li><a href="hours.html">Hours</a></li>
+				<li><a href="ordering.html">Order</a></li>
+				<li><a href="cart.html">My Cart</a></li>
+				<li><a href="login.html">Log Out</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 style="text-align:center;">My Cart</h1>
+			</div>
+		</div>
+		<div class="cart">
+			<div class="container">
+				<div class= "row headers">
+					<div class="col-xs-3"></div>
+					<div class="col-xs-3"><b>Price</b></div>
+					<div class="col-xs-3"><b>Quantity</b></div>
+					<div class="col-xs-3"></div>
+				</div> <!--end row-->
+				
+				<div class= "row">
+					<div class="col-xs-3 item1">
+						Tuscan Turkey </br>
+						<small class="ordered-ingredients1">No Peppers, Add Lettuce, Add Onions</small>
+					</div>
+					<div class="col-xs-3 price1">$<span class="price">7.89</span></div>
+					<div class="col-xs-3 quantity1">
+						<input type="number" name="quantity1" value="1" min="1" max="20">
+					</div>
+					<div class="col-xs-3">
+						<a href="#" class="cartDelete1">[x]</a> 
+					</div>
+				</div> <!--end row-->
+				
+				<div class= "row">
+					<div class="col-xs-3 item2">
+						Tuscan Turkey </br>
+						<small class="ordered-ingredients2">No Peppers, Add Lettuce, Add Onions</small>
+					</div>
+					<div class="col-xs-3 price2">$<span class="price">7.89</span></div>
+					<div class="col-xs-3 quantity2">
+						<input type="number" name="quantity2" value="1" min="1" max="20">
+					</div>
+					<div class="col-xs-3">
+						<a href="#" class="cartDelete2">[x]</a>
+					</div>
+				</div> <!--end row-->
+				
+				<div class= "row">
+					<div class="col-xs-6"><span class="total">Total</span></div>
+					<div class="col-xs-3"><b>$</b><span class="total-price">22.87</span></div>
+					<div class="col-xs-3"></div>
+				</div> <!--end row-->
+			</div>
+			<a class="btn btn-primary checkout-btn" href="checkout.html">Checkout</a>
+		</div>
+	<body>
+</html>

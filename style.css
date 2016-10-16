@@ -1,0 +1,295 @@
+/* GENERAL */
+.hidden {
+	display: none;
+}
+
+.float-right {
+	float: right;
+}
+
+.center {
+	text-align: center;
+}
+
+.list-style-type-none {
+	list-style-type: none;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+
+/* COLORS */
+.purple {
+	color: #781d7e;
+}
+
+.green {
+	color: #b2bb1e;
+}
+
+.error {
+	color: #ff0000;
+}
+
+/* BUTTONS */
+.btn-primary {
+	background-image: none;
+	background-color: #781d7e;
+	border-color: #781d7e;
+	color: #ffffff;
+}
+
+.main-menu-buttons button {
+	margin: 5px;
+}
+
+/* NAV BAR */
+.navbar-toggle {
+    float: left;
+    margin-left: 15px;
+	margin-right: 5px;
+}
+
+.navbar-image {
+	padding-top: 2px;
+}
+
+.navbar-brand {
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+/* LOGIN */
+.login form {
+	width: 250px;
+	margin: 0 auto;
+	position: relative;
+	top: 20%;
+}
+
+.incorrect-login {
+	margin-top: 10px;
+	display: none;
+}
+
+/* MAIN MENU */
+.main-menu {
+	position: relative;
+	top: 5%;
+	color: #781d7e;
+}
+
+.main-menu .welcome {
+	font-size: 2em;
+	font-weight: bold;
+    left: 25%;
+    position: relative;
+    width: 50%;
+    text-align: center;
+    margin: 15px;
+	margin-left: 0;
+}
+
+.main-menu-btns {
+	padding: 0;
+	text-align: center;
+}
+
+.main-menu-btns a {
+	width: 75%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.main-menu .logout {
+	background-color: #b2bb1e;
+	border-color: #b2bb1e;
+	bottom: 0;
+	right: 0;
+	position: fixed;
+}
+
+/* HOURS */
+.hours {
+	margin-left: 20px;
+	font-size: 1.3em;
+}
+
+.hours .now {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.hours .days {
+	float: left;
+	margin-right: 5px;
+}
+
+/* ORDERING */
+.btn-group ul {
+	width: 60vw;
+	white-space: normal;
+}
+
+.btn-group ul li {
+	width: 60vw;
+	white-space: inherit;
+}
+
+.checkout-btn {
+	float: right;
+	margin: 20px;
+	width: 30%;
+}
+
+.cart-btn {
+	float: right;
+	margin: 20px;
+	margin-top: 10px;
+	width: 30%;
+}
+
+.checkbox-inline.checkbox-inline, .radio-inline.radio-inline {
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.sandwich-row {
+	margin-bottom: 15px;
+	padding-left: 30px;
+}
+
+.sandwich-name {
+	font-weight: bold;
+}
+
+.price-col {
+	margin-top: 15px;
+}
+
+.order-btns {
+	margin-bottom: 15px;
+	margin-left: 2px;
+	margin-right: 20px;
+}
+
+.order-btns .add-to-cart[name='Create Your Own'] {
+	display: none;
+}
+
+.sandwich-name-modal {
+	color: #781d7e;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.modal-buttons {
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.modal-buttons .cancel-btn {
+	margin-left: 30px;
+	color: #781d7e;
+}
+
+/* CHECKOUT */
+.add-drink-side {
+	margin-left: 30px;
+}
+
+.order-btn {
+	float: right;
+	margin-bottom: 20px;
+	margin-right: 50px;
+}
+
+.sandwich-ordered {
+	padding-left: 20px;
+}
+
+.payment-form {
+	padding-right:50px; 
+	padding-left:50px;
+}
+
+.modal-message {
+	padding:20px;
+	padding-bottom: 0;
+	text-align: center;
+	font-size: 15px;
+}
+
+.btn-modal {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 200px;
+}
+
+.modal-dialog {
+	margin-top: 20px;
+}
+
+.pickup-time {
+	margin-left: 10px;
+}
+
+/* CART */
+#cartList .row, #checkoutList .row {
+	padding-bottom: 10px;
+	margin: 0;
+}
+
+.cart-sandwich-row {
+	padding: 15px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: 1px solid #ddd;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.ordered-ingredients {
+	color:#B2BB1E;
+}
+
+input.quantity {
+	width: 40px;
+}
+
+.cart-delete {
+	float: right;
+}
+
+.add-drink-side {
+	float: right;
+	margin-right: 5px;
+}
+
+.drink-side {
+	padding-left: 10px;
+	text-align: left;
+}
+
+.drink-side input {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#cartList .total {
+	float: right;
+	font-weight: bold;
+}
+
+#cartList .total-price {
+	font-weight: bold;
+}
